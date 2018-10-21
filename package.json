@@ -1,0 +1,38 @@
+{
+  "name": "lifedaily-task",
+  "version": "1.0.0",
+  "description": "Lifedaily test task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "build-dev": "npm run build -- --progress --watch --mode=development",
+    "build-prod": "npm run build -- --progress --mode=production",
+    "server": "node server.js",
+    "host": "sudo node modifyHost.js"
+  },
+  "author": "Matt Bedell",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-vue": "^5.0.0-beta.3",
+    "html-webpack-plugin": "^3.2.0",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "hostify": "^0.3.0-beta.1",
+    "vue": "^2.5.17"
+  }
+}

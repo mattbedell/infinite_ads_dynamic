@@ -1,0 +1,12 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "sourceType": "module"
+  },
+  "extends": ["airbnb-base", "plugin:vue/recommended"],
+  "globals": {
+    "window": false,
+    "googletag": true,
+    "pbjs": false
+  }
+}
